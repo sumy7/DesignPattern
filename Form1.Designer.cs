@@ -51,6 +51,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(12, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 12);
@@ -60,6 +61,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(262, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 12);
@@ -68,8 +70,9 @@
             // 
             // textSummer
             // 
-            this.textSummer.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.textSummer.BackColor = System.Drawing.Color.White;
             this.textSummer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textSummer.ForeColor = System.Drawing.Color.Black;
             this.textSummer.Location = new System.Drawing.Point(264, 45);
             this.textSummer.Name = "textSummer";
             this.textSummer.ReadOnly = true;
@@ -80,6 +83,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(262, 111);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 12);
@@ -97,6 +101,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(262, 341);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 12);
@@ -105,7 +110,7 @@
             // 
             // textMain
             // 
-            this.textMain.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.textMain.BackColor = System.Drawing.Color.White;
             this.textMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textMain.Location = new System.Drawing.Point(264, 356);
             this.textMain.Name = "textMain";
@@ -116,7 +121,8 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(828, 45);
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(802, 45);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(108, 33);
             this.button1.TabIndex = 9;
@@ -128,7 +134,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(958, 584);
+            this.ClientSize = new System.Drawing.Size(915, 584);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textMain);
             this.Controls.Add(this.label4);
@@ -138,6 +144,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.treeView);
+            this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Name = "frmMain";
             this.Text = "设计模式";
             this.Load += new System.EventHandler(this.frmMain_Load);

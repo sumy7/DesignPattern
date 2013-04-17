@@ -13,7 +13,8 @@ namespace DesignPattern
 
     public partial class frmMain : Form
     {
-        String dbLocation = @"C:\datebase.mdb";
+        String dbLocation = null;
+        String path = null;
         connDatebase Datebase;
         public frmMain()
         {
@@ -38,6 +39,8 @@ namespace DesignPattern
         }
         private void frmMain_Load(object sender, EventArgs e)
         {
+            path = Application.StartupPath;
+            dbLocation = path + @"/datebase.mdb";
             Datebase = new AccessDB(dbLocation);
             if (!Datebase.connection())
             {
