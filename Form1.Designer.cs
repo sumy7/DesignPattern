@@ -37,6 +37,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textMain = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.highLightTextbox1 = new DesignPattern.HighLightTextbox();
             ((System.ComponentModel.ISupportInitialize)(this.picUML)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,7 +124,7 @@
             // button1
             // 
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(802, 45);
+            this.button1.Location = new System.Drawing.Point(1004, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(108, 33);
             this.button1.TabIndex = 9;
@@ -130,11 +132,31 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(796, 33);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 12);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "示例代码";
+            // 
+            // highLightTextbox1
+            // 
+            this.highLightTextbox1.Location = new System.Drawing.Point(798, 48);
+            this.highLightTextbox1.Name = "highLightTextbox1";
+            this.highLightTextbox1.Size = new System.Drawing.Size(547, 521);
+            this.highLightTextbox1.TabIndex = 11;
+            this.highLightTextbox1.Load += new System.EventHandler(this.highLightTextbox1_Load);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(915, 584);
+            this.ClientSize = new System.Drawing.Size(1386, 584);
+            this.Controls.Add(this.highLightTextbox1);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textMain);
             this.Controls.Add(this.label4);
@@ -165,6 +187,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RichTextBox textMain;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label5;
+        private HighLightTextbox highLightTextbox1;
     }
 }
 

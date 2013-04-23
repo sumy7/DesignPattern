@@ -71,5 +71,10 @@ namespace DesignPattern
                 picUML.Image = Datebase.getUML(treeView.SelectedNode.Text);
             }
         }
+
+        private void highLightTextbox1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
