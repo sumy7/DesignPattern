@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="DesignPattern.AccessDB">
+  <Class Name="DesignPattern.AccessDB" Collapsed="true">
     <Position X="0.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAEABAAAAIAAAAAAAAEBCAAAAAAAAAAAAAAiAAAAEAA=</HashCode>
@@ -28,30 +28,30 @@
       <FileName>Form2.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DesignPattern.Program">
+  <Class Name="DesignPattern.HighLightTextbox" Collapsed="true">
     <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAACAAABEAAACAAEAGACAAAAAAAAAQBQAAAAA=</HashCode>
+      <FileName>HighLightTextbox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Program" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DesignPattern.Properties.Resources" Collapsed="true">
-    <Position X="3" Y="1.5" Width="1.5" />
+    <Position X="4.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="DesignPattern.Properties.Settings" Collapsed="true">
-    <Position X="4.75" Y="1.5" Width="1.5" />
+    <Position X="6.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="DesignPattern.HighLightTextbox" Collapsed="true">
-    <Position X="3" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>ABAAAAAAACAAABEAAACAAEAGACAAAAAAAAAQBQAAAAA=</HashCode>
-      <FileName>HighLightTextbox.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="宋体" Size="9" />
