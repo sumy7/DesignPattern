@@ -14,5 +14,6 @@ namespace DesignPattern
         public abstract string getText(string name);
         public abstract Image getUML(string name);
         public abstract List< KeyValuePair<string,int> > getLevel();
+        public abstract string getCode(string name);
     }
 }

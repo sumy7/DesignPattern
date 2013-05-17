@@ -150,5 +150,34 @@ namespace DesignPattern
             }
             return Result;
         }
+        public override string getCode(string name)
+        {
+            string Result = "";
+            OleDbCommand sqlcmd = null;
+            OleDbDataReader reader = null;
+            try
+            {
+                //objConnection.Open();  //打开连接  
+                sqlcmd = new OleDbCommand(@"select * from dezignpattern where Name='" + name + @"'", objConnection);  //sql语句
+                reader = sqlcmd.ExecuteReader();              //执行查询   
+                if (reader.Read())
+                { //这个read调用很重要！不写的话运行时将提示找不到数据   
+                    Result = (string)reader["Code"];   //取得字段的值   
+                }
+                Debug.WriteLine("--Code：" + Result);
+                reader.Close();
+                //objConnection.Close();
+
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine("获取代码异常：" + e.ToString());
+            }
+            finally
+            {
+
+            }
+            return Result;
+        }
     }
 }
