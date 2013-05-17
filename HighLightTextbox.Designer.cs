@@ -1,7 +1,33 @@
-﻿namespace DesignPattern
+﻿using System.Collections.Generic;
+namespace DesignPattern
 {
     partial class HighLightTextbox
     {
+        protected string _codetype; 
+        public string CodeType 
+        { 
+            get 
+            { 
+                return _codetype; 
+            } 
+            set 
+            {
+                _codetype = value;
+            } 
+        }
+        protected string _text;
+        public string Text
+        {
+            get
+            {
+                return _text;
+            }
+            set
+            {
+                _text = value;
+                richTextBox1.Text = value;
+            }
+        }
         /// <summary> 
         /// 必需的设计器变量。
         /// </summary>
@@ -47,10 +73,12 @@
             this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.richTextBox1.Location = new System.Drawing.Point(33, 29);
             this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(487, 328);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
@@ -73,5 +101,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RichTextBox richTextBox1;
+
+
     }
 }

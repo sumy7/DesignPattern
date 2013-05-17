@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace DesignPattern
 {
@@ -80,6 +81,7 @@ namespace DesignPattern
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
             panel1.Invalidate();
+            //HighLightText();
         }
 
 
@@ -87,6 +89,8 @@ namespace DesignPattern
         {
 
         }
+
+
 
     }
 }
