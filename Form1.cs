@@ -52,6 +52,7 @@ namespace DesignPattern
             //textSummer.Text = (string)Datebase.getSummer("简单工厂模式");
             //textMain.Text = (string)Datebase.getText("简单工厂模式");
             //picUML.Image = Datebase.getUML("简单工厂模式");
+            textCode.CodeType = "cpp";
             
         }
 
@@ -69,6 +70,7 @@ namespace DesignPattern
                 textSummer.Text = (string)Datebase.getSummer(treeView.SelectedNode.Text);
                 textMain.Text = (string)Datebase.getText(treeView.SelectedNode.Text);
                 picUML.Image = Datebase.getUML(treeView.SelectedNode.Text);
+                textCode.Text = Datebase.getCode(treeView.SelectedNode.Text);
             }
         }
 

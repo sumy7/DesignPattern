@@ -38,7 +38,7 @@
             this.textMain = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.highLightTextbox1 = new DesignPattern.HighLightTextbox();
+            this.textCode = new DesignPattern.HighLightTextbox();
             ((System.ComponentModel.ISupportInitialize)(this.picUML)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,7 +78,7 @@
             this.textSummer.Location = new System.Drawing.Point(264, 45);
             this.textSummer.Name = "textSummer";
             this.textSummer.ReadOnly = true;
-            this.textSummer.Size = new System.Drawing.Size(511, 52);
+            this.textSummer.Size = new System.Drawing.Size(511, 133);
             this.textSummer.TabIndex = 4;
             this.textSummer.Text = "";
             // 
@@ -86,7 +86,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(262, 111);
+            this.label3.Location = new System.Drawing.Point(1118, 51);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 12);
             this.label3.TabIndex = 5;
@@ -94,9 +94,9 @@
             // 
             // picUML
             // 
-            this.picUML.Location = new System.Drawing.Point(264, 136);
+            this.picUML.Location = new System.Drawing.Point(922, 51);
             this.picUML.Name = "picUML";
-            this.picUML.Size = new System.Drawing.Size(510, 178);
+            this.picUML.Size = new System.Drawing.Size(190, 425);
             this.picUML.TabIndex = 6;
             this.picUML.TabStop = false;
             // 
@@ -104,7 +104,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(262, 341);
+            this.label4.Location = new System.Drawing.Point(262, 190);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 12);
             this.label4.TabIndex = 7;
@@ -114,10 +114,10 @@
             // 
             this.textMain.BackColor = System.Drawing.Color.White;
             this.textMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textMain.Location = new System.Drawing.Point(264, 356);
+            this.textMain.Location = new System.Drawing.Point(264, 205);
             this.textMain.Name = "textMain";
             this.textMain.ReadOnly = true;
-            this.textMain.Size = new System.Drawing.Size(511, 178);
+            this.textMain.Size = new System.Drawing.Size(511, 329);
             this.textMain.TabIndex = 8;
             this.textMain.Text = "";
             // 
@@ -128,7 +128,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(108, 33);
             this.button1.TabIndex = 9;
-            this.button1.Text = "button1";
+            this.button1.Text = "开启上帝模式";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -142,20 +142,21 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "示例代码";
             // 
-            // highLightTextbox1
+            // textCode
             // 
-            this.highLightTextbox1.Location = new System.Drawing.Point(798, 48);
-            this.highLightTextbox1.Name = "highLightTextbox1";
-            this.highLightTextbox1.Size = new System.Drawing.Size(547, 521);
-            this.highLightTextbox1.TabIndex = 11;
-            this.highLightTextbox1.Load += new System.EventHandler(this.highLightTextbox1_Load);
+            this.textCode.CodeType = null;
+            this.textCode.Location = new System.Drawing.Point(798, 48);
+            this.textCode.Name = "textCode";
+            this.textCode.Size = new System.Drawing.Size(112, 486);
+            this.textCode.TabIndex = 11;
+            this.textCode.Load += new System.EventHandler(this.highLightTextbox1_Load);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1386, 584);
-            this.Controls.Add(this.highLightTextbox1);
+            this.ClientSize = new System.Drawing.Size(1444, 578);
+            this.Controls.Add(this.textCode);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textMain);
@@ -188,7 +189,7 @@
         private System.Windows.Forms.RichTextBox textMain;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
-        private HighLightTextbox highLightTextbox1;
+        private HighLightTextbox textCode;
     }
 }
 
