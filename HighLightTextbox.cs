@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Runtime.InteropServices;
 
 namespace DesignPattern
 {
     public partial class HighLightTextbox : UserControl
     {
-        private void showLineNo()
+        public void showLineNo()
         {
             //获得当前坐标信息
             Point p = this.richTextBox1.Location;
@@ -84,13 +85,20 @@ namespace DesignPattern
             //HighLightText();
         }
 
-
         private void HighLightTextbox_Load(object sender, EventArgs e)
+        {
+            richTextBox1.BackColor = Color.White;
+            richTextBox1.WordWrap = false;
+        }
+        private void richTextBox1_HScorll(object sender, EventArgs e)
         {
 
         }
 
-
+        private void richTextBox1_VScroll(object sender, EventArgs e)
+        {
+            showLineNo();
+        }  
 
     }
 }

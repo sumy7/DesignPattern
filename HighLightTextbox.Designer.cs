@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System.Windows.Forms;
 namespace DesignPattern
 {
     partial class HighLightTextbox
@@ -82,6 +82,7 @@ namespace DesignPattern
             this.richTextBox1.Size = new System.Drawing.Size(487, 328);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
+            this.richTextBox1.VScroll += new System.EventHandler(this.richTextBox1_VScroll);
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // HighLightTextbox
@@ -98,6 +99,7 @@ namespace DesignPattern
         }
 
         #endregion
+
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RichTextBox richTextBox1;
