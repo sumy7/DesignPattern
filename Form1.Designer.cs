@@ -86,7 +86,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(1118, 51);
+            this.label3.Location = new System.Drawing.Point(1118, 22);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 12);
             this.label3.TabIndex = 5;
@@ -94,9 +94,9 @@
             // 
             // picUML
             // 
-            this.picUML.Location = new System.Drawing.Point(922, 51);
+            this.picUML.Location = new System.Drawing.Point(967, 51);
             this.picUML.Name = "picUML";
-            this.picUML.Size = new System.Drawing.Size(190, 425);
+            this.picUML.Size = new System.Drawing.Size(305, 425);
             this.picUML.TabIndex = 6;
             this.picUML.TabStop = false;
             // 
@@ -145,9 +145,9 @@
             // textCode
             // 
             this.textCode.CodeType = null;
-            this.textCode.Location = new System.Drawing.Point(798, 48);
+            this.textCode.Location = new System.Drawing.Point(781, 51);
             this.textCode.Name = "textCode";
-            this.textCode.Size = new System.Drawing.Size(112, 486);
+            this.textCode.Size = new System.Drawing.Size(180, 486);
             this.textCode.TabIndex = 11;
             this.textCode.Load += new System.EventHandler(this.highLightTextbox1_Load);
             // 
@@ -155,7 +155,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1444, 578);
+            this.ClientSize = new System.Drawing.Size(1284, 578);
             this.Controls.Add(this.textCode);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
