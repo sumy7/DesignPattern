@@ -162,7 +162,7 @@ namespace DesignPattern
                 reader = sqlcmd.ExecuteReader();              //执行查询   
                 if (reader.Read())
                 { //这个read调用很重要！不写的话运行时将提示找不到数据   
-                    Result = (string)reader["Code"];   //取得字段的值   
+                    Result = (string)reader["exCode"];   //取得字段的值   
                 }
                 Debug.WriteLine("--Code：" + Result);
                 reader.Close();
