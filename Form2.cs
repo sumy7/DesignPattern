@@ -74,7 +74,7 @@ namespace DesignPattern
             OleDbConnection olecon = new OleDbConnection(constr);
             olecon.Open();
             //OleDbCommand oledcom = new OleDbCommand("insert into dezignpattern(UML) values(@ImageList)", olecon);
-            OleDbCommand oledcom = new OleDbCommand("update dezignpattern set MainText='" + richTextBox2.Text + "' where Name='" + richTextBox1.Text + "'", olecon);
+            OleDbCommand oledcom = new OleDbCommand("update dezignpattern set MainText='" + richTextBox3.Text + "' where Name='" + richTextBox1.Text + "'", olecon);
             oledcom.ExecuteNonQuery();
             olecon.Close();
             MessageBox.Show("总结更新完毕");
@@ -89,10 +89,15 @@ namespace DesignPattern
             OleDbConnection olecon = new OleDbConnection(constr);
             olecon.Open();
             //OleDbCommand oledcom = new OleDbCommand("insert into dezignpattern(UML) values(@ImageList)", olecon);
-            OleDbCommand oledcom = new OleDbCommand("update dezignpattern set Code='" + richTextBox2.Text + "' where Name='" + richTextBox1.Text + "'", olecon);
+            OleDbCommand oledcom = new OleDbCommand("update dezignpattern set exCode='" + richTextBox4.Text + "' where Name='" + richTextBox1.Text + "'", olecon);
             oledcom.ExecuteNonQuery();
             olecon.Close();
             MessageBox.Show("代码更新完毕");
+        }
+
+        private void richTextBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
