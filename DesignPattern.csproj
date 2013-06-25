@@ -52,7 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccessDB.cs" />
+    <Compile Include="AccessDBHelper.cs" />
     <Compile Include="ConnDatebase.cs" />
+    <Compile Include="DatabaseFactory.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
