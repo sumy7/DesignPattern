@@ -8,12 +8,13 @@ namespace DesignPattern
 {
     abstract class connDatebase
     {
-        public abstract bool connection();
-        public abstract bool disConnection();
-        public abstract string getSummer(string name);
-        public abstract string getText(string name);
-        public abstract Image getUML(string name);
+        public abstract void execQuery(string name);
+        public abstract string getSummer();
+        public abstract string getText();
+        public abstract Image getUML();
         public abstract List< KeyValuePair<string,int> > getLevel();
-        public abstract string getCode(string name);
+        public abstract string getCode();
+        public abstract bool ishasUML();
+        public abstract bool ishasCode();
     }
 }
