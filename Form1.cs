@@ -49,6 +49,7 @@ namespace DesignPattern
             }
             //TreeNode node = new TreeNode("设计模式");
             treeView.Nodes.Add(treeListInit());
+            treeView.TopNode.ExpandAll();
             //textSummer.Text = (string)Datebase.getSummer("简单工厂模式");
             //textMain.Text = (string)Datebase.getText("简单工厂模式");
             //picUML.Image = Datebase.getUML("简单工厂模式");
@@ -75,6 +76,11 @@ namespace DesignPattern
         }
 
         private void highLightTextbox1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }

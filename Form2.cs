@@ -83,16 +83,23 @@ namespace DesignPattern
         private void button4_Click(object sender, EventArgs e)
         {
             //更新代码
-            string path = Application.StartupPath;
-            string strpath = path + @"/datebase.mdb";
-            string constr = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + strpath;
-            OleDbConnection olecon = new OleDbConnection(constr);
-            olecon.Open();
-            //OleDbCommand oledcom = new OleDbCommand("insert into dezignpattern(UML) values(@ImageList)", olecon);
-            OleDbCommand oledcom = new OleDbCommand("update dezignpattern set exCode='" + richTextBox4.Text + "' where Name='" + richTextBox1.Text + "'", olecon);
-            oledcom.ExecuteNonQuery();
-            olecon.Close();
-            MessageBox.Show("代码更新完毕");
+            try
+            {
+                string path = Application.StartupPath;
+                string strpath = path + @"/datebase.mdb";
+                string constr = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + strpath;
+                OleDbConnection olecon = new OleDbConnection(constr);
+                olecon.Open();
+                //OleDbCommand oledcom = new OleDbCommand("insert into dezignpattern(UML) values(@ImageList)", olecon);
+                OleDbCommand oledcom = new OleDbCommand("update dezignpattern set exCode='" + richTextBox4.Text + "' where Name='" + richTextBox1.Text + "'", olecon);
+                oledcom.ExecuteNonQuery();
+                olecon.Close();
+                MessageBox.Show("代码更新完毕");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("代码更新失败，出现异常"+ex.ToString());
+            }
         }
 
         private void richTextBox3_TextChanged(object sender, EventArgs e)
