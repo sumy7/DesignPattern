@@ -54,6 +54,7 @@
             // 
             // treeView
             // 
+            this.treeView.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.treeView.Location = new System.Drawing.Point(12, 45);
             this.treeView.Name = "treeView";
             this.treeView.Size = new System.Drawing.Size(221, 489);
